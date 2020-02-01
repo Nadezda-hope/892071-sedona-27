@@ -19,13 +19,13 @@
             </nav>
         </header>
         <main>
-            <h2>Добро пожаловать в SEDONA</h2>
+            <h1 class="visually-hidden">Добро пожаловать в SEDONA</h1>
             <section>
-              <h2>Приветствие</h2>
+              <h2 class="visually-hidden">Приветствие</h2>
                 <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Sedona">
             </section>
             <section>
-              <h2>Почему Седона круче</h2>
+              <h2 class="visually-hidden">Почему Седона круче</h2>
                 <div>
                   <p>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
                   ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
@@ -40,12 +40,28 @@
                     Укажите предполагаемые даты поездки,<br> 
                     и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
+                <!-- не знаю, как привязать кнопку к форме. Это попап и он будет работать на JS?-->
                 <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <p><label for="checkin">Дата заезда:</label>
+                        <input type="date" id="checkin" name="checkin" placeholder="24 апреля 2017" value="2017-04-24">
+                    </p>
+                    <p><label for="checkout">Дата выезда:</label>
+                        <input type="date" id="checkout" name="checkout" placeholder="4 июля 2017" value="2017-07-04">
+                   </p>
+                    <p>
+                        <label for="adults">Взрослые:</label>
+                        <input type="number" id="adults" name="adult" step="1">
+
+                        <label for="children">Дети:</label>
+                        <input type="number" id="children" name="child" step="1">
+                    </p>
+                </form>
             </section>
         </main>
         <footer>
             <div>
-                <h3>Контакты</h3>
+                <h3 class="visually-hidden">Контакты</h3>
                 <p>#VISITSEDONA
                 </p>
             </div>
