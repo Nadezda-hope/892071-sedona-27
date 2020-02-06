@@ -1,0 +1,182 @@
+
+
+
+body {
+    width: 1280px;
+    margin: auto;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: #ffffff;  
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.site-navigation li,
+.footer-social li {
+    list-style: none;
+}
+
+.site-navigation li a {
+    color: #000000;
+}
+
+.site-navigation li a:hover {
+    color: #87ceeb;
+}
+
+.site-navigation li a:active {
+    color:#dcdcdc;
+}
+
+.main-header-logo img {
+    text-align: center;
+}
+
+.cotent-logo {
+    height: 773px;
+    text-align: center;
+    background-image: url("./../img/background-photo.jpg");
+    background-color: #add8e6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50%;
+    background-size: 1200px 773px;
+}
+
+.cotent-logo img {
+    padding: 50px;
+}
+
+
+.reasons p:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reasons p:nth-child(2) {
+    color: #696969;
+}
+
+.reason-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.real-city,
+.bridge {
+    color: #ffffff;
+    background-color: #87ceeb;
+
+}
+
+.square,
+.road,
+.tourists {
+    color: #696969;
+    background-color: #dcdcdc;
+}
+
+.square h3,
+.road h3,
+.tourists h3 {
+    color: #000000;
+}
+
+.search .button {
+    width: 570px;
+    height: 85px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    border: 0;
+    background-color: rgb(114, 84, 63);
+}
+
+.search .button:hover {
+    background-color: rgb(87, 62, 45);
+}
+
+.search .button:active {
+    background-color: rgb(71, 54, 42);
+}
+
+/*.form {
+    display: none;
+}
+
+.button:active .form {
+    display: block;
+}*/
+
+.search-form {
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-item input {
+    position: relative;
+    border: 0;
+    background-color: #f5f5f5;
+}
+
+.search-form input:hover {
+    border: 0;
+    background-color: #e6e6e6;
+    outline: none;
+}
+
+.search-form input:focus {
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.search-button  {
+    width: 460px;
+    height: 60px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #87ceeb;
+    text-transform: uppercase;
+}
+
+.search-button:hover {
+    background-color: #65b1cf;
+}
+.search-button:active {
+    color: #acd1e0;
+    background-color: #62a3bd;
+}
+
+.main-footer {
+    background-color: #ffffff;
+    opacity: 0,5;
+}
+
+
