@@ -31,8 +31,17 @@ a {
     overflow: hidden;
 }
 
-.site-navigation li,
-.footer-social li {
+
+/*навигация сайта*/
+
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-navigation li {
+    width: 130px;
+    height: 26px;
     list-style: none;
 }
 
@@ -54,8 +63,11 @@ a {
     font-weight: bold;
 }
 
-.main-header-logo img {
-    text-align: center;
+
+.main-header-logo {
+    margin-left: -70px;
+    position: absolute;
+    left: 50%;
 }
 
 .cotent-logo {
@@ -275,9 +287,17 @@ a {
     color: #81b3d2;
 }
 
+.sorting-items a:active {
+    color: #000000;
+    line-style: 
+}
+
 .main-footer {
     background-color: #ffffff;
     opacity: 0,5;
 }
 
+.footer-social li {
+    list-style: none;
+}
 
