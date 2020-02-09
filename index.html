@@ -6,7 +6,6 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-
     </head>
     <body>
         <header class="main-header">
@@ -27,22 +26,23 @@
             <section class="cotent-logo">
                 <h2 class="visually-hidden">Приветствие</h2>
                 <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Sedona">
-            </section>
-            <section class="content-feature">
-              <h2 class="visually-hidden">Почему Седона круче</h2>
+                <div class="mask"></div>
                 <div class="reasons">
-                  <p>
-                      Седона - небольшой городок в Аризоне<br>
-                  заслуживающий большего!
-                </p>
-                  <p>
-                    Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-                  </p>
+                    <p>
+                        Седона — небольшой городок в Аризоне<br>
+                        заслуживающий большего!
+                    </p>
+                    <p>
+                        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+                    </p>
                 </div>
+            </section>    
+            <section class="content-feature">
+                <h2 class="visually-hidden">Почему Седона круче</h2>
                 <div class="reason-item real-city">
                     <h3>Настоящий<br> 
                         городок</h3>
-                    <span>- №1 -</span>
+                    <span>— №1 —</span>
                     <p>
                         Седона — не аттракцион для туристов, там<br>
                         течёт своя жизнь
@@ -78,7 +78,7 @@
                 <div class="reason-item bridge">
                     <h3>Там есть<br>
                         Мост дьявола</h3>
-                    <span>№2</span>
+                    <span>— №2 —</span>
                     <p>
                         Да, по нему можно пройти! Если конечно<br> 
                         вы осмелитесь
@@ -86,7 +86,7 @@
                 </div>
                 <div class="reason-item square">
                     <h3>Небольшая площадь</h3>
-                    <span>№3</span>
+                    <span>— №3 —</span>
                     <p>
                         Все достопримечательности<br>
                         находятся очень близко
@@ -94,7 +94,7 @@
                 </div>
                 <div class="reason-item road">
                     <h3>Красивая дорога</h3>
-                    <span>№4</span>
+                    <span>— №4 —</span>
                     <p>
                         Ехать в Седону из Лас-Вегаса совсем<br> 
                         не скучно!
@@ -102,7 +102,7 @@
                 </div>
                 <div class="reason-item tourists">
                     <h3>Мало туристов</h3>
-                    <span>№5</span>
+                    <span>— №5 —</span>
                     <p>
                         Большинство едет в гранд каньон<br> 
                         и толпится там
@@ -138,13 +138,16 @@
                 </form>
                 </div>
             </section>
+            <section class="map">
+                <img src="img/map.png" width="1200" height="593" alt="Карта штата">
+            </section>
         </main>
         <footer class="main-footer">
             <section>
             <div class="footer-contacts">
                 <h3 class="visually-hidden">Контакты</h3>
                 <p>#VISITSEDONA
-                </p>
+                <p></p>
             </div>
             <div class="footer-social">
                 <ul>
@@ -154,10 +157,13 @@
                 </ul>
             </div>
             <div class="footer-copyright">
-                <p>Website by</p>
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_academy.svg" width="115" height="41" alt="HTML Academy"></a>
+                <p>Website by
+                    <a href="https://htmlacademy.ru/intensive/htmlcss">
+                        <img src="img/logo_academy.svg" width="115" height="41" alt="HTML Academy">
+                    </a>
+                </p>
             </div>
-        </section>
+            </section>
         </footer>
     </body>
 </html>
