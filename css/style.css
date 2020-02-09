@@ -34,9 +34,15 @@ a {
 
 /*навигация сайта*/
 
+.main-navigation {
+    height: 56px;
+}
+
 .site-navigation {
     display: flex;
     flex-direction: row;
+    height: 56px;
+    align-items: center;
 }
 
 .site-navigation li {
