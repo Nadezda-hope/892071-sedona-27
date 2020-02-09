@@ -2,7 +2,6 @@ body {
     width: 1200px;
     margin: auto;
     padding: 0;
-    border:1 px solid #dcdcdc;
     box-shadow: 
     10px 0 12px #dcdcdc,
     -10px 0 12px #dcdcdc;
@@ -79,30 +78,36 @@ a {
 .cotent-logo {
     height: 725px;
     text-align: center;
-    background-image: url("./../img/background-photo.jpg");
+    background-image: 
+    url("./../img/mask.svg"),
+    url("./../img/background-photo.jpg");
     background-color: #add8e6;
     background-repeat: no-repeat;
-    background-position: center;
-    background-position: 50%;
-    background-size: 1200px 773px;
+    background-position: 
+    left 0px bottom -117px,
+    center;
+    background-size: 1200px 725px;
 }
 
 .cotent-logo img {
-    padding: 50px;
+    margin-top: 75px;
 }
 
+
 .reasons {
-    height: 210px;
-    padding-top: 110px;
+    margin-top: 73px;
+    height: 217px;
     background-color: #ffffff;
 }
 
-.mask {
-    background-image: url("./../img/mask.svg");
+.reasons p:first-child {
+    margin: 0;
+    padding-top: 60px;
 }
 
-.content-feature {
-    text-align: center;
+.reasons p:last-child {
+    margin: 0;
+    padding-top: 30px;
 }
 
 .reasons p:nth-child(1) {
@@ -114,7 +119,12 @@ a {
     color: #696969;
 }
 
+.content-feature {
+    text-align: center;
+}
+
 .reason-item h3 {
+    margin-top: 0;
     font-size: 20px;
     font-weight: bold;
 }
@@ -276,6 +286,7 @@ a {
 
 .sorting {
     font-size: 18px; 
+    border-bottom: 1px solid #b2b2b2;
 }
 
 .sorting-items li {
@@ -295,9 +306,62 @@ a {
 
 .sorting-items a:active {
     color: #000000;
-    line-style: 
+    border-bottom: none;
 }
 
+
+/*карточки поиска*/
+.search-inner {
+
+}
+
+/*.search-inner-items {
+    display: flex;
+    flex-direction: column;
+}*/
+
+.search-inner-item {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.hotel-title a {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.hotel-title a:hover,
+.hotel-title h3:focus {
+    color: #81b3d2;
+}
+
+.hotel-title a:active {
+    color: #b2b2b2;
+}
+
+.search-inner-more a {
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+    height: 25px;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.search-inner-reserv a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 3px;
+    width: 140px;
+    height: 25px;
+    color: #ffffff;
+    background-color: #766357;
+}
+
+/*футер*/
 .main-footer {
     background-color: #ffffff;
     opacity: 0,5;
@@ -306,4 +370,3 @@ a {
 .footer-social li {
     list-style: none;
 }
-
