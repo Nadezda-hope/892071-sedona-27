@@ -1,5 +1,5 @@
 body {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     padding: 0;
     box-shadow: 
@@ -33,20 +33,30 @@ a {
 
 /*навигация сайта*/
 
-.main-navigation {
+.main-header {
     height: 56px;
+    margin: 0;
+}
+
+.main-navigation {
+    min-height: 42px;
+    margin-bottom: 0;
 }
 
 .site-navigation {
     display: flex;
     flex-direction: row;
-    height: 56px;
+    justify-content: space-around;
+    margin: 0;
+    min-height: 42px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .site-navigation li {
-    width: 130px;
-    height: 26px;
+    padding-top: 15px;
+    max-width: 239px;
+    height: 56px;
     list-style: none;
 }
 
@@ -84,7 +94,7 @@ a {
     background-color: #add8e6;
     background-repeat: no-repeat;
     background-position: 
-    left 0px bottom -117px,
+    center bottom -117px,
     center;
     background-size: 1200px 725px;
 }
@@ -96,7 +106,7 @@ a {
 
 .reasons {
     margin-top: 73px;
-    height: 217px;
+    min-height: 217px;
     background-color: #ffffff;
 }
 
@@ -119,18 +129,51 @@ a {
     color: #696969;
 }
 
-.content-feature {
-    text-align: center;
-}
-
 .reason-item h3 {
     margin-top: 0;
     font-size: 20px;
     font-weight: bold;
 }
 
+
+/*блок основного содержания*/
+
+.content-feature {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: center;
+}
+
+.real-city,
+.bridge,
+.square,
+.road,
+.tourists {
+    width: 400px;
+    height: 256px;
+}
+
+.housing,
+.food,
+.souvenir {
+    height: 330px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pic {
+    width: 800px;
+    height: 256px;
+}
+
 .real-city,
 .bridge {
+    margin: 0;
     color: #ffffff;
     background-color: #81b3d2;
 
@@ -139,8 +182,8 @@ a {
 .square,
 .road,
 .tourists {
-    color: #696969;
-    background-color: #dcdcdc;
+    color: #333333;
+    background-color: #eeeeee;
 }
 
 .square h3,
@@ -148,6 +191,9 @@ a {
 .tourists h3 {
     color: #000000;
 }
+
+
+/*форма*/
 
 .search {
     height: 690px;
@@ -191,8 +237,6 @@ a {
 .button:active .form {
     display: block;
 }*/
-
-
 
 .search-form {
     color: #000000;
@@ -242,8 +286,11 @@ a {
 .map {
     
 }
-
+/*стили внутренней страницы*/
+/*фильтры*/
 .filters {
+    display: flex;
+    flex-direction: row;
     color: #ffffff;
     background-image: url("./../img/filter-background.jpg");
     background-color: #648eb4;
@@ -263,11 +310,6 @@ a {
 }
 
 
-.filter-input-checkbox:hover,
-.filter-input-checkbox:focus {
-
-}
-
 .filter-button {
     color: #ffffff;
     
@@ -282,6 +324,14 @@ a {
 .filter-button:active {
     color: #000000;
     background-color: #ffffff;
+}
+
+.sorting-items {
+    display: flex;
+}
+
+.sorting-items li {
+    padding: 17px;
 }
 
 .sorting {
@@ -320,11 +370,21 @@ a {
     flex-direction: column;
 }*/
 
+.search {
+    height: 400px;
+}
+
 .search-inner-item {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     border-bottom: 1px solid #b2b2b2;
+}
+
+.search-inner-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .hotel-title a {
@@ -341,7 +401,7 @@ a {
 .hotel-title a:active {
     color: #b2b2b2;
 }
-
+/*
 .search-inner-more a {
     display: inline-block;
     text-align: center;
@@ -360,13 +420,47 @@ a {
     color: #ffffff;
     background-color: #766357;
 }
+*/
 
+/*карта*/
+
+.map {
+    position: relative;
+}
+/*
+.map img {
+    position: absolute;
+}
+*/
 /*футер*/
 .main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 120px;
     background-color: #ffffff;
     opacity: 0,5;
+}
+
+.footer-contacts,
+.footer-social,
+.footer-copyright {
+    max-width: 400px;
+}
+
+.footer-contacts p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .footer-social li {
     list-style: none;
 }
+
+
+.footer-copyright svg:hover path,
+.footer-copyright svg:focus path {
+    fill: #81b3d2;
+}
+

@@ -61,9 +61,6 @@
                 </fieldset>
                 <fieldset>
                     <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
-                    <!--не знаю, как оформить этот элемент. 
-                        Рамка в макете "от 0 до 5000" - это <output> к ползунку или просто рамка с буквами?
-                            сделала пока только ползунок-->
                     <p class="filter-option">
                         <label class="filter-input filter-input-range" for="price">от 0 до 5000</label>
                         <input type="range" id="price" step="100" min="0" max="5000">
@@ -74,8 +71,6 @@
         </section>
         <section class="sorting">
             <h2>Найдено:</h2>
-            <!--не знаю, как сделать эту сортировку, пока только список ссылок сделала. 
-                И что это за треугольнички в макете справа от сортировки - вообще не знаю))-->
             <span>Сортировка:</span>
             <ul class="sorting-items">
                 <li><a href="#">по цене</a></li>
@@ -87,15 +82,19 @@
             <h3 class="visually-hidden">Подобранные варианты</h3>
             <ul class="search-inner-items">
                 <li class="search-inner-item">
-                    <a href="#"><img src="img/amara-hotel.jpg" width="165" height="90" alt="Гостиница Amara Resort & SPA"></a>
-                    <h3 class="hotel-title">
-                        <a href="#">Amara Resort & Spa</a>
-                    </h3>
-                    <span>Гостиница</span>
-                    <span>от 4000 р.</span>
-                    <p>
-                        <span class="search-inner-more"><a href="#">Подробнее</a></span>
-                        <span class="search-inner-reserv"><a href="#">Забронировать</a></span>
+                    <a href="#"><img src="img/amara-hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort & SPA"></a>
+                    <p class="search-inner-info">
+                        <h3 class="hotel-title">
+                            <a href="#">Amara Resort & Spa</a>
+                        </h3>
+                        <p>
+                            <span>Гостиница</span>
+                            <span>от 4000 р.</span>
+                        </p>
+                        <p>
+                            <span class="search-inner-more"><a href="#">Подробнее</a></span>
+                            <span class="search-inner-reserv"><a href="#">Забронировать</a></span>
+                        </p>
                     </p>
                     <p class="search-inner-rating">
                         <img src="#" alt="Четыре звезды">
@@ -103,7 +102,6 @@
                     </p>
                 </li>
                 <li class="search-inner-item">
-                    <!--разметка для флекса?-->
                     <p>
                         <a href="#"><img src="img/desert-hotel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn"></a>
                     </p>
@@ -125,11 +123,13 @@
                 </li>
                 <li class="search-inner-item">
                     <a href="#"><img src="img/villas-hotel.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo"></a>
-                    <h3 class="hotel-title">
-                        <a href="#">Villas at Poco Diablo</a>
-                    </h3>
-                    <span>Апартаменты</span>
-                    <span>от 2000 р.</span>
+                    <p>
+                        <h3 class="hotel-title">
+                            <a href="#">Villas at Poco Diablo</a>
+                        </h3>
+                        <span>Апартаменты</span>
+                        <span>от 2000 р.</span>
+                    </p>
                     <p>
                         <span class="search-inner-more"><a href="#">Подробнее</a></span>
                         <span class="search-inner-reserv"><a  href="#">Забронировать</a></span>
