@@ -284,7 +284,6 @@ a {
 }
 
 .map {
-    
 }
 /*стили внутренней страницы*/
 /*фильтры*/
@@ -459,8 +458,8 @@ a {
 }
 
 
-.footer-copyright svg:hover path,
-.footer-copyright svg:focus path {
+.footer-copyright svg:hover,
+.footer-copyright svg:focus {
     fill: #81b3d2;
 }
 
