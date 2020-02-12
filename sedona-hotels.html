@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-    </head>
+</head>
 <body class="inner-page">
     <header class="main-header">
         <nav class="main-navigation">
@@ -54,23 +54,25 @@
                            <label for="motel">Мотель</label> 
                         </li>
                         <li class="filter-option">
-                           <input type="checkbox" id="apartments" name="apartments">
+                           <input class="filter-input filter-input-checkbox" type="checkbox" id="apartments" name="apartments">
                            <label for="apartments">Апартаменты</label> 
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
-                    <p class="filter-option">
-                        <label class="filter-input filter-input-range" for="price">от 0 до 5000</label>
-                        <input type="range" id="price" step="100" min="0" max="5000">
-                    </p>
-                </fieldset>
-                <button type="submit" class="filter-button">ПОКАЗАТЬ</button>
+                <div>
+                    <fieldset>
+                        <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+                        <p class="filter-option">
+                            <label class="filter-input filter-input-range" for="price">от 0 до 5000</label>
+                            <input type="range" id="price" step="100" min="0" max="5000">
+                        </p>
+                    </fieldset>
+                    <button type="submit" class="filter-button">ПОКАЗАТЬ</button>
+                </div>
             </form>
         </section>
         <section class="sorting">
-            <h2>Найдено:</h2>
+            <h2>Найдено: 3</h2>
             <span>Сортировка:</span>
             <ul class="sorting-items">
                 <li><a href="#">по цене</a></li>
@@ -83,87 +85,95 @@
             <ul class="search-inner-items">
                 <li class="search-inner-item">
                     <a href="#"><img src="img/amara-hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort & SPA"></a>
-                    <p class="search-inner-info">
+                    <div class="search-inner-info">
                         <h3 class="hotel-title">
                             <a href="#">Amara Resort & Spa</a>
                         </h3>
-                        <p>
+                        <div>
                             <span>Гостиница</span>
-                            <span>от 4000 р.</span>
-                        </p>
-                        <p>
+                             <span>от 4000 р.</span>
+                        </div>
+                        <div>
                             <span class="search-inner-more"><a href="#">Подробнее</a></span>
-                            <span class="search-inner-reserv"><a href="#">Забронировать</a></span>
-                        </p>
-                    </p>
-                    <p class="search-inner-rating">
+                            <span class="search-inner-reserv"><a href="#">Забронировать</a></span>                            </div>
+                        </div>
+                    </div>
+                    <div class="search-inner-rating">
                         <img src="#" alt="Четыре звезды">
                         <span>Рейтинг: 8,5</span>
-                    </p>
+                    </div>
+                    
                 </li>
                 <li class="search-inner-item">
-                    <p>
-                        <a href="#"><img src="img/desert-hotel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn"></a>
-                    </p>
-                    <p>
+                    <a href="#"><img src="img/desert-hotel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn"></a>
+                    <div class="search-inner-info">
                         <h3 class="hotel-title">
                             <a href="#">Desert Quail Inn</a>
                         </h3>
-                        <span>Мотель</span>
-                        <span>от 3000 р.</span>
-                    </p>
-                    <p>
-                        <span class="search-inner-more"><a href="#">Подробнее</a></span>
-                        <span class="search-inner-reserv"><a  href="#">Забронировать</a></span>
-                    </p>
-                    <p class="search-inner-rating">
+                        <div>
+                            <span>Мотель</span>
+                            <span>от 3000 р.</span>
+                        </div>
+                        <div>
+                            <span class="search-inner-more"><a href="#">Подробнее</a></span>
+                            <span class="search-inner-reserv"><a  href="#">Забронировать</a></span>
+                        </div>
+                    </div>
+                    <div class="search-inner-rating">
                         <img src="#" alt="Три звезды">
                         <span>Рейтинг: 8,9</span>
-                    </p>
+                    </div>
                 </li>
                 <li class="search-inner-item">
                     <a href="#"><img src="img/villas-hotel.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo"></a>
-                    <p>
+                    <div class="search-inner-info">
                         <h3 class="hotel-title">
                             <a href="#">Villas at Poco Diablo</a>
                         </h3>
-                        <span>Апартаменты</span>
-                        <span>от 2000 р.</span>
-                    </p>
-                    <p>
-                        <span class="search-inner-more"><a href="#">Подробнее</a></span>
-                        <span class="search-inner-reserv"><a  href="#">Забронировать</a></span>
-                    </p>
-                    <p class="search-inner-rating">
+                        <div>
+                            <span>Апартаменты</span>
+                            <span>от 2000 р.</span>
+                        </div>
+                        <div>
+                            <span class="search-inner-more"><a href="#">Подробнее</a></span>
+                            <span class="search-inner-reserv"><a  href="#">Забронировать</a></span>
+                        </div>
+                    </div>
+                    <div class="search-inner-rating">
                         <img src="#" alt="Две звезды">
                         <span>Рейтинг: 9,2</span>
-                    </p>
+                    </div>
                 </li>
             </ul>
         </section>
     </main>
     <footer class="main-footer">
-        <section>
-            <div class="footer-contacts">
-                <h3 class="visually-hidden">Контакты</h3>
-                <p>#VISITSEDONA
-                <p></p>
-            </div>
-            <div class="footer-social">
-                <ul>
-                    <li><a class="social-button" href="#">Twitter</a></li>
-                    <li><a class="social-button" href="#">Facebook</a></li>                        
-                    <li><a class="social-button" href="#">Youtube</a></li>                            
-                </ul>
-            </div>
-            <div class="footer-copyright">
-                <p>Website by
-                    <a href="https://htmlacademy.ru/intensive/htmlcss">
-                        <img src="img/logo_academy.svg" width="115" height="41" alt="HTML Academy">
-                    </a>
-                </p>
-            </div>
-            </section>
+        <div class="footer-contacts">
+            <h3 class="visually-hidden">Контакты</h3>
+            <p>#VISITSEDONA</p>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">Twitter</a></li>
+                <li><a class="social-button" href="#">Facebook</a></li>                        
+                <li><a class="social-button" href="#">Youtube</a></li>                            
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <span>Website by</span>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="41" viewBox="0 0 115 41">
+                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about=""/>
+                     </rdf:RDF>
+                  </x:xmpmeta>
+                  <?xpacket end="w"?></metadata>
+                  <image id="logo_name" width="115" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAApCAMAAAAxiOZFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC1lBMVEUjHyD///8jHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABji7E7AAAA8HRSTlMAAAwoRV96d1s/JAgVMEtog5651/Hr0LWYfGENcvn638Sor8rn/jil8FoBaYeA87ughU0yFwUdOVVxi8NA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"/>
+                  </svg>
+            </a>
+        </div>
     </footer>
 </body>
 </html>
