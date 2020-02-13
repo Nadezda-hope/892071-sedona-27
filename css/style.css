@@ -130,6 +130,8 @@ a {
 }
 
 .reason-item h3 {
+    padding-top: 40px;
+    box-sizing: border-box;
     margin-top: 0;
     font-size: 20px;
     font-weight: bold;
@@ -141,7 +143,7 @@ a {
 .content-feature {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     text-align: center;
 }
 
@@ -303,6 +305,11 @@ a {
     background-color: #648eb4;
 }
 
+
+.filter label {
+cursor: pointer;
+}
+
 .filter ul {
     list-style: none;
 }
@@ -329,41 +336,139 @@ a {
     font-weight: bold;
 }
 
-
-.filter-button {
-    color: #ffffff;
-    width: 140px;
-    height: 40px;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-}
-
-
-.filter-button:hover,
-.filter-button:focus,
-.filter-button:active {
-    color: #000000;
-    background-color: #ffffff;
-}
-
 .filter-option input[type="checkbox"] {
     display: none;
 }
 
-label::before {
+.filter-option label::before {
     content: url("./../img/checkbox-off.png");
     padding-right: 15px;
     padding-bottom: 0px;
 }
 
-.filter-option input:disabled + label::before {
+input:disabled + label::before {
     content: url("./../img/checkbox-off.png");
 }
 
-.filter-option input:checked + label::before {
+input:checked + label::before {
     content: url("./../img/checkbox-on.png");
 }
 
+.filter-option-range {
+    width: 360px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.filter-option-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.price-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.price-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.price-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
+    cursor: pointer;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
 
 /*блок сортировки*/
 
@@ -490,26 +595,25 @@ background-color: #669ec0;
     background-color: #503e33;
 }
 
-
-/*карта*/
-
-.map {
-    position: relative;
-}
-/*
-.map img {
-    position: absolute;
-}
-*/
 /*футер*/
+.map {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+
+.map img {
+    width: 1200px;
+    height: 593px;
+}
 .main-footer {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     height: 120px;
     background-color: #ffffff;
-    opacity: 0,5;
 }
 
 .footer-contacts,
@@ -526,7 +630,6 @@ background-color: #669ec0;
 .footer-social li {
     list-style: none;
 }
-
 
 .footer-copyright svg:hover,
 .footer-copyright svg:focus {
