@@ -556,6 +556,16 @@ input:checked + label::before {
     color: #b2b2b2;
 }
 
+.form {
+    width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-form {
+    background-color: #ffffff;
+}
+
 .search-inner-more a {
     display: inline-block;
     text-align: center;
@@ -594,6 +604,7 @@ background-color: #669ec0;
     color: #857871;
     background-color: #503e33;
 }
+
 
 /*футер*/
 .map {
