@@ -267,6 +267,7 @@ a {
 .search-button  {
     width: 460px;
     height: 60px;
+    margin-bottom: 52px;
     border: 0;
     outline: none;
     color: #ffffff;
