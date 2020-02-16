@@ -47,15 +47,26 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0;
-    min-height: 42px;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 42px;
+}
+
+.navigation-left  {
+    text-align: left;
+}
+
+.navigation-right  {
+    text-align: right;
 }
 
 .site-navigation li {
     padding-top: 15px;
     max-width: 239px;
+    min-width: 150px;
     height: 56px;
     list-style: none;
 }
@@ -205,10 +216,9 @@ a {
 
 .search h2 {
     font-size: 29px;
-    
 }
 
-.search .button {
+.search .form-button {
     width: 570px;
     height: 85px;
     color: #ffffff;
@@ -222,28 +232,31 @@ a {
     background-color: #766357;
 }
 
-.search .button:hover,
-.search .button:focus {
+.search .form-button:hover,
+.search .form-button:focus {
     background-color: #604e43;
 }
 
-.search .button:active {
+.search .form-button:active {
     color: #857871;
     background-color: #503e33;
 }
 
-/*.form {
-    display: none;
-}
-
-.button:active .form {
-    display: block;
-}*/
-
-.search-form {
+.search-form  { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 380px;
+    padding-top: 32px;
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.search-item {
+    margin-top: 30px;
 }
 
 .search-item input {
@@ -267,6 +280,7 @@ a {
 .search-button  {
     width: 460px;
     height: 60px;
+    margin-top: 30px;
     margin-bottom: 52px;
     border: 0;
     outline: none;
@@ -281,13 +295,27 @@ a {
 .search-button:focus {
     background-color: #669ec0;
 }
+
 .search-button:active {
     color: #88b6d1;
     background-color: #5496bd;
 }
 
-.map {
+.checkin input,
+.checkout input {
+    width: 325px;
+    height: 35px;
+    margin-left: 15px;
+    padding-left: 20px;
 }
+
+.people input {
+    width: 115px;
+    height: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 /*стили внутренней страницы*/
 /*фильтры*/
 
@@ -308,11 +336,14 @@ a {
 
 
 .filter label {
-cursor: pointer;
+    cursor: pointer;
 }
 
 .filter ul {
     list-style: none;
+}
+
+.filter-option input {
 }
 
 .filters fieldset {
@@ -344,7 +375,6 @@ cursor: pointer;
 .filter-option label::before {
     content: url("./../img/checkbox-off.png");
     padding-right: 15px;
-    padding-bottom: 0px;
 }
 
 input:disabled + label::before {
@@ -515,6 +545,14 @@ input:checked + label::before {
     border-bottom: none;
 }
 
+.search-inner-item img {
+    margin-right: 30px;
+}
+
+
+.search-inner-rating {
+    margin-left: auto;
+}
 
 /*карточки поиска*/
 .search-inner {
@@ -633,6 +671,7 @@ background-color: #669ec0;
 .footer-social,
 .footer-copyright {
     max-width: 400px;
+    text-align: center;
 }
 
 .footer-contacts p {
@@ -644,8 +683,37 @@ background-color: #669ec0;
     list-style: none;
 }
 
-.footer-copyright svg:hover,
-.footer-copyright svg:focus {
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 48px;
+    margin-left: 25px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    background-color: #81B3D2;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+    background-color: #5496bd;
+}
+
+.htmlacademy-logo:hover {
     fill: #81b3d2;
 }
 
+.htmlacademy-logo:active {
+    fill: #bdbbbc;
+}
