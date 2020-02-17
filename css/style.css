@@ -255,7 +255,7 @@ a {
     text-transform: uppercase;
 }
 
-.search-item {
+.search-item:first-child {
     margin-top: 30px;
 }
 
@@ -310,20 +310,18 @@ a {
 }
 
 .people input {
-    width: 115px;
+    width: 85px;
     height: 35px;
     margin-left: 30px;
     margin-right: 30px;
+    padding-left: 20px;
 }
 
 /*стили внутренней страницы*/
 /*фильтры*/
 
-.filters {
-    min-height: 217px;
-}
-
 .filter {
+    min-height: 217px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -334,19 +332,24 @@ a {
     background-color: #648eb4;
 }
 
-
-.filter label {
-    cursor: pointer;
-}
-
 .filter ul {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-inline-start: 0;
     list-style: none;
-}
-
-.filter-option input {
+    flex-grow: 1;
 }
 
 .filters fieldset {
+    min-height: 217px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     border: none;
 }
 
@@ -362,27 +365,35 @@ a {
     flex-grow: 1;
 }
 
-.filters legend{
+.filters legend {
     padding-top: 24px;
     font-size: 16px;
     font-weight: bold;
+    
 }
 
-.filter-option input[type="checkbox"] {
-    display: none;
+.filter-input-checkbox {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
 }
 
-.filter-option label::before {
+.filter-input-checkbox input[type="checkbox"] + .checkbox-indicator::before {
     content: url("./../img/checkbox-off.png");
-    padding-right: 15px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    left: 2px;
 }
 
-input:disabled + label::before {
-    content: url("./../img/checkbox-off.png");
-}
-
-input:checked + label::before {
+.filter-input-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
     content: url("./../img/checkbox-on.png");
+    position: absolute;
+    left: 2px;
+}
+
+.filter-input-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::before{
+    opacity: 0.5;
 }
 
 .filter-option-range {
@@ -515,18 +526,14 @@ input:checked + label::before {
     flex-wrap: wrap;
 }
 
-
-.sorting-items li {
-    padding-left: 17px;
-}
-
 .sorting {
     font-size: 18px; 
     border-bottom: 1px solid #b2b2b2;
 }
 
-.sorting-items li {
+.sorting-item li {
     list-style: none;
+    padding-left: 17px;
 }
 
 .sorting-items a {
@@ -545,6 +552,16 @@ input:checked + label::before {
     border-bottom: none;
 }
 
+.search-item input {
+    font: inherit;
+    text-transform: uppercase;
+}
+
+.search-item input::after {
+    content: url("./../img/calendar.svg");
+}
+
+/*карточки поиска*/
 .search-inner-item img {
     margin-right: 30px;
 }
@@ -554,7 +571,6 @@ input:checked + label::before {
     margin-left: auto;
 }
 
-/*карточки поиска*/
 .search-inner {
 
 }
@@ -568,6 +584,7 @@ input:checked + label::before {
 .search-inner-item {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
@@ -577,7 +594,10 @@ input:checked + label::before {
 .search-inner-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     min-width: 289px;
+    height: 151px;
 }
 
 .hotel-title a {
