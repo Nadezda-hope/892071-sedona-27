@@ -158,6 +158,12 @@ a {
     text-align: center;
 }
 
+.content-feature h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
 .real-city,
 .bridge,
 .square,
@@ -211,10 +217,12 @@ a {
 .search {
     height: 690px;
     text-align: center;
+    line-height: 24px;
     letter-spacing: 0;
 }
 
 .search h2 {
+    padding-top: 30px;
     font-size: 29px;
 }
 
@@ -253,6 +261,10 @@ a {
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.search-form input {
+    
 }
 
 .search-item:first-child {
@@ -684,7 +696,7 @@ background-color: #669ec0;
     align-items: center;
     text-align: center;
     height: 120px;
-    background-color: #ffffff;
+    background-color: rgba(255,255,255, 0.9);
 }
 
 .footer-contacts,
@@ -692,6 +704,7 @@ background-color: #669ec0;
 .footer-copyright {
     max-width: 400px;
     text-align: center;
+
 }
 
 .footer-contacts p {
@@ -728,6 +741,19 @@ background-color: #669ec0;
 
 .social-button:active {
     background-color: #5496bd;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 50px;
+}
+
+.footer-copyright span {
+    line-height: 26px;
+    align-self: center;
+    padding-right: 10px;
 }
 
 .htmlacademy-logo:hover {
