@@ -140,16 +140,20 @@ a {
     color: #696969;
 }
 
+
+/*блок основного содержания*/
+
 .reason-item h3 {
-    padding-top: 40px;
+    padding-top: 45px;
     box-sizing: border-box;
     margin-top: 0;
     font-size: 20px;
     font-weight: bold;
 }
 
-
-/*блок основного содержания*/
+.reason-item p {
+    padding-top: 10px;
+}
 
 .content-feature {
     display: flex;
@@ -211,6 +215,18 @@ a {
     color: #000000;
 }
 
+.housing h3,
+.food h3,
+.souvenir h3 {
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+.housing p,
+.food p,
+.souvenir p {
+    padding-top: 0;
+}
 
 /*форма*/
 
@@ -263,8 +279,11 @@ a {
     text-transform: uppercase;
 }
 
-.search-form input {
-    
+.search-form input[type="text"] {
+    background-image: url("./../img/calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 23px;
+    background-position: 315px center;
 }
 
 .search-item:first-child {
@@ -272,13 +291,19 @@ a {
 }
 
 .search-item input {
+    font: inherit;
+    text-transform: uppercase;
     position: relative;
-    border: 0;
+    border: 1px solid #f5f5f5;
     background-color: #f5f5f5;
 }
 
+.search-item input::after {
+    content: url("./../img/calendar.svg");
+}
+
 .search-form input:hover {
-    border: 0;
+    border: 1px solid #e6e6e6;
     background-color: #e6e6e6;
     outline: none;
 }
@@ -529,8 +554,16 @@ a {
 .sorting {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
+    height: 85px;
+    padding: 0 70px;
+    font-size: 18px; 
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.sorting h2 {
+    font-size: 21px;
 }
 
 .sorting-items {
@@ -538,14 +571,26 @@ a {
     flex-wrap: wrap;
 }
 
-.sorting {
-    font-size: 18px; 
-    border-bottom: 1px solid #b2b2b2;
-}
-
-.sorting-item li {
+.sorting-items li {
     list-style: none;
     padding-left: 17px;
+}
+
+
+.sorting span {
+    padding-left: 48px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.sorting ul {
+    padding-left: 25px;
+}
+
+.sorting-items {
+    display: flex;
+    justify-content: space-between;
+    width: 235px;
 }
 
 .sorting-items a {
@@ -564,14 +609,23 @@ a {
     border-bottom: none;
 }
 
-.search-item input {
-    font: inherit;
-    text-transform: uppercase;
+.sorting-direct {
+    margin-left: auto;
 }
 
-.search-item input::after {
-    content: url("./../img/calendar.svg");
+.sorting-direct span {
+    padding-left: 10px;
 }
+
+.sorting-direct svg:hover,
+.sorting-direct svg:focus {
+    fill: #000000;
+}
+
+.sorting-direct svg:active {
+    fill: #81B3D2;
+}
+
 
 /*карточки поиска*/
 .search-inner-item img {
