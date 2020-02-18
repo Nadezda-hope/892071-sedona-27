@@ -628,24 +628,6 @@ a {
 
 
 /*карточки поиска*/
-.search-inner-item img {
-    margin-right: 30px;
-}
-
-
-.search-inner-rating {
-    margin-left: auto;
-}
-
-.search-inner {
-
-}
-
-/*.search-inner-items {
-    display: flex;
-    flex-direction: column;
-}*/
-
 
 .search-inner-item {
     display: flex;
@@ -653,17 +635,42 @@ a {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    height: 150px;
     list-style: none;
     border-bottom: 1px solid #b2b2b2;
+}
+
+.search-inner-item img {
+    margin: 0;
+    padding-left: 32px;
 }
 
 .search-inner-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     min-width: 289px;
-    height: 151px;
+    height: 135px;
+    padding-left: 13px;
+}
+
+.search-inner-rating {
+    height: 123px;
+    margin-left: auto;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.search-inner-rating span {
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+    height: 27px;
+    background-color: #f2f2f2;
 }
 
 .hotel-title a {
