@@ -400,14 +400,13 @@ a {
 }
 
 .filter ul {
-    min-height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start;     
+    min-height: 118px;  
     padding-inline-start: 0;
     list-style: none;
-    flex-grow: 1;
 }
 
 .filters fieldset {
@@ -429,14 +428,13 @@ a {
 }
 
 .filters fieldset:nth-child(3) {
-    flex-grow: 1;
+    max-width: 320px;
 }
 
 .filters legend {
     padding-top: 24px;
     font-size: 16px;
     font-weight: bold;
-    
 }
 
 .filter-input-checkbox {
@@ -468,7 +466,7 @@ a {
 
 .filter-range {
     width: 360px;
-    margin-left: auto;
+    margin-left: 200px;
     color: #ffffff;
     text-transform: uppercase;
 }
