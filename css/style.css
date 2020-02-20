@@ -324,6 +324,7 @@ a {
 }
 
 .search-item {
+    width: 460px;
     margin: 0;
     margin-top: 4px;
 }
@@ -335,18 +336,26 @@ a {
 
 .checkin input,
 .checkout input {
-    width: 345px;
+    width: 335px;
     height: 34px;
     margin-left: 15px;
-    padding-left: 20px;
+    padding-left: 10px;
+}
+
+.checkin input {
+    margin-left: 18px;
 }
 
 .people input {
-    width: 91px;
+    width: 92px;
     height: 34px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 35px;
+    margin-right: 40px;
     padding-left: 20px;
+}
+
+.people input:last-child {
+    margin-right: 0;
 }
 
 .search-item input {
