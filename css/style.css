@@ -113,8 +113,8 @@ a {
 }
 
 .reasons {
-    margin-top: 73px;
-    min-height: 217px;
+    margin-top: 72px;
+    min-height: 218px;
     background-color: #ffffff;
 }
 
@@ -175,13 +175,23 @@ a {
 .road,
 .tourists {
     width: 400px;
-    height: 256px;
+    min-height: 256px;
+}
+
+.square {
+    width: 398px;
+    border-right: 2px solid #efefef; 
+}
+
+.tourists {
+    width: 398px;
+    border-left: 2px solid #efefef; 
 }
 
 .housing,
 .food,
 .souvenir {
-    height: 330px;
+    min-height: 330px;
     width: 400px;
     display: flex;
     flex-direction: column;
