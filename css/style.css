@@ -259,6 +259,7 @@ a {
     text-align: center;
     line-height: 24px;
     letter-spacing: 0;
+    background-color: #ffffff;
 }
 
 .form-header {
@@ -836,6 +837,7 @@ background-color: #669ec0;
 
 /*футер*/
 .map {
+    height: 593px;
     z-index: -1;
     position: absolute;
     bottom: 0;
