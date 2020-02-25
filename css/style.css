@@ -259,11 +259,11 @@ a {
     text-align: center;
     line-height: 24px;
     letter-spacing: 0;
-    background-color: #ffffff;
 }
 
 .form-header {
-    height: 292px;
+    height: 292px;    
+    background-color: #ffffff;
 }
 
 .form-header h2 {
