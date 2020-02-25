@@ -254,28 +254,32 @@ a {
 /*форма*/
 
 .search {
+    position: relative;
     height: 764px;
     text-align: center;
     line-height: 24px;
     letter-spacing: 0;
 }
 
-.search h2 {
+.form-header {
+    height: 292px;
+}
+
+.form-header h2 {
     margin: 0;
-    margin-top: 38px;
-    padding-top: 17px;
+    padding-top: 56px;
     font-size: 30px;
     line-height: 24px;
 }
 
-.search p:first-of-type{
+.form-header p:first-of-type{
     margin: 0;
     padding-top: 32px;
     font-size: inherit;
     line-height: inherit;
 }
 
-.search .form-button {
+.form-header .form-button {
     width: 568px;
     height: 86px;
     margin-top: 46px;
@@ -300,8 +304,14 @@ a {
     background-color: #503e33;
 }
 
+.form {
+    display: none;
+}
+
 .search-form  { 
+    position: absolute;
     display: flex;
+    left: 316px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -315,6 +325,33 @@ a {
     text-transform: uppercase;
     background-color: #ffffff;
 }
+
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+      opacity: 0;
+    }
+  
+    70% {
+      transform: translateY(30px);
+      opacity: 0.7;
+    }
+  
+    90% {
+      transform: translateY(-10px);
+      opacity: 0.7;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 .search-form input[type="text"] {
     background-image: url("./../img/calendar.svg");
@@ -415,7 +452,7 @@ a {
     flex-wrap: wrap;
     color: #ffffff;
     background-image: url("./../img/filter-background.jpg");
-    background-color: #648eb4;
+    background-color: #5283ac;
 }
 
 .filter ul {
@@ -829,8 +866,10 @@ background-color: #669ec0;
 }
 
 .footer-contacts p {
-    font-size: 20px;
+    margin: 0;
+    font-size: 21px;
     font-weight: bold;
+    text-align: left;
 }
 
 .footer-social li {
@@ -855,14 +894,16 @@ background-color: #669ec0;
     background-color: #81B3D2;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-icon:hover,
+.social-icon:focus {
     background-color: #669ec0;
 }
 
-.social-button:active {
+.social-icon:active {
+    fill: #88b6d1;
     background-color: #5496bd;
 }
+
 
 .footer-copyright {
     display: flex;
