@@ -354,7 +354,12 @@ a {
     }
   }
 
-.search-form input[type="text"] {
+.checkin input,
+.checkout input {
+    width: 335px;
+    height: 34px;
+    margin-left: 15px;    
+    padding-left: 10px;
     background-image: url("./../img/calendar.svg");
     background-repeat: no-repeat;
     background-size: 21px 23px;
@@ -372,24 +377,22 @@ a {
     padding: 0;
 }
 
-.checkin input,
-.checkout input {
-    width: 335px;
-    height: 34px;
-    margin-left: 15px;
-    padding-left: 10px;
-}
-
-.checkin input {
-    margin-left: 18px;
-}
-
 .people input {
     width: 92px;
     height: 34px;
     margin-left: 35px;
     margin-right: 40px;
-    padding-left: 20px;
+    padding-left: 20px;  
+    background-image: 
+    url("./../img/minus-icon.svg"),
+    url("./../img/plus-icon.svg");
+    background-size: 
+    11px 11px,
+    12px 3px;
+    background-repeat: no-repeat;
+    background-position: 
+    left 13px center,
+    right 13px center;
 }
 
 .people input:last-child {
