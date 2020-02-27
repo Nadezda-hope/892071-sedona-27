@@ -72,6 +72,8 @@ a {
 
 .site-navigation a {
     color: #000000;
+    transition-property: color;
+    transition-duration: 0.3s;
 }
 
 .site-navigation a:hover,
@@ -293,6 +295,8 @@ a {
     outline: none;
     border: 0;
     background-color: #766357;
+    transition-property: background-color;
+    transition-duration: 0.3s;
 }
 
 .search .form-button:hover,
@@ -334,18 +338,18 @@ a {
 
 @keyframes bounce {
     0% {
-      transform: translateY(-2000px);
+      transform: translateY(-200px);
       opacity: 0;
     }
   
     70% {
       transform: translateY(30px);
-      opacity: 0.7;
+      opacity: 0.5;
     }
   
     90% {
       transform: translateY(-10px);
-      opacity: 0.7;
+      opacity: 0.8;
     }
   
     100% {
@@ -358,7 +362,7 @@ a {
 .checkout input {
     width: 335px;
     height: 34px;
-    margin-left: 15px;    
+    margin-left: 16px;    
     padding-left: 10px;
     background-image: url("./../img/calendar.svg");
     background-repeat: no-repeat;
@@ -376,19 +380,18 @@ a {
     margin-top: 55px;
     padding: 0;
 }
-
 .people input {
-    width: 92px;
+    width: 114px;
     height: 34px;
-    margin-left: 35px;
-    margin-right: 40px;
-    padding-left: 20px;  
+    margin-left: 30px;
+    margin-right: 32px;
+    text-align: center;
     background-image: 
     url("./../img/minus-icon.svg"),
     url("./../img/plus-icon.svg");
     background-size: 
-    11px 11px,
-    12px 3px;
+    12px 3px,
+    11px 11px;
     background-repeat: no-repeat;
     background-position: 
     left 13px center,
@@ -431,6 +434,8 @@ a {
     font-weight: bold;
     background-color: #81b3d2;
     text-transform: uppercase;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
 }
 
 .search-button:hover,
@@ -792,11 +797,8 @@ a {
     color: #b2b2b2;
 }
 
-.form {
-    width: 570px;
-    margin-left: auto;
-    margin-right: auto;
-}
+юhotel-price
+
 
 .search-inner-more a {
     display: inline-block;
@@ -899,6 +901,11 @@ background-color: #669ec0;
     background-color: #81B3D2;
 }
 
+.social-icon {
+    transition-property: background-color, fill;
+    transition-duration: 0.3s;
+}
+
 .social-icon:hover,
 .social-icon:focus {
     background-color: #669ec0;
@@ -921,6 +928,11 @@ background-color: #669ec0;
     line-height: 26px;
     align-self: center;
     padding-right: 10px;
+}
+
+.htmlacademy-logo {
+    transition-property: fill;
+    transition-duration: 0.3s;
 }
 
 .htmlacademy-logo:hover {
