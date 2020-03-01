@@ -393,37 +393,18 @@ img {
     width: 112px;
     height: 34px;
     margin-left: 30px;
+    margin-right: 20px;
     text-align: center;
-    /*background-image: 
-    url("./../img/minus-icon.svg"),
-    url("./../img/plus-icon.svg");
+    background-image: 
+    url("./../img/minus.png"),
+    url("./../img/plus.png");
     background-size: 
     12px 3px,
     11px 11px;
     background-repeat: no-repeat;
     background-position: 
     left 13px center,
-    right 13px center;*/
-}
-
-.people input::before {
-    content: url("./../img/minus-icon.svg");
-    fill: #a9a9a9;
-    left: 10px;
-    width: 12px;
-    height: 3px;
-}
-
-.people input::after {
-    content: url("./../img/plus-icon.svg.svg");
-    fill: #a9a9a9;
-    right: 10px;
-    width: 11px;
-    height: 11px;
-}
-
-.people input {
-    margin-right: 20px;
+    right 13px center;
 }
 
 .people input:last-child {
@@ -562,6 +543,7 @@ img {
     width: 360px;
     margin-left: 200px;
     margin-right: 0;
+    margin-bottom: 20px;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -694,14 +676,8 @@ img {
     font-size: 21px;
 }
 
-.sorting-items {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .sorting-items li {
     list-style: none;
-    padding-left: 17px;
 }
 
 .sorting span {
@@ -711,13 +687,14 @@ img {
 }
 
 .sorting ul {
-    padding-left: 25px;
+    padding-left: 40px;
 }
 
 .sorting-items {
     display: flex;
     justify-content: space-between;
-    width: 235px;
+    flex-wrap: wrap;
+    min-width: 235px;
 }
 
 .sorting-items a {
@@ -799,7 +776,7 @@ img {
 .search-inner-rating {
     height: 123px;
     margin-left: auto;
-    padding-right: 70px;
+    padding-right: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -842,7 +819,10 @@ img {
 
 .search-inner-more a {
     display: inline-block;
+    line-height: 27px;
+    vertical-align: middle;
     text-align: center;
+    vertical-align: middle;
     width: 110px;
     height: 27px;
     color: #ffffff;
@@ -850,7 +830,9 @@ img {
 }
 
 .search-inner-reserv a {
-    display: inline-block;
+    display: inline-block;    
+    line-height: 27px;
+    vertical-align: middle;
     text-align: center;
     margin-left: 2px;
     width: 143px;
@@ -924,6 +906,7 @@ background-color: #669ec0;
     justify-content: space-between;
     min-width: 150px;
     height: 48px;
+    margin: 0;
     padding: 0;
 }
 
