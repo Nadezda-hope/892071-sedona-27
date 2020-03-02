@@ -379,6 +379,10 @@ img {
     margin-top: 4px;
 }
 
+.search-item:first-child {
+    margin-top: 56px;
+}
+
 .calendar {
     position: absolute;
     width: 21px;
@@ -426,7 +430,7 @@ img {
 }
 
 .people .children {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .adults .direction-minus {
@@ -472,22 +476,24 @@ img {
     top: 8px;
     right: 35px;
 }
-/*
+
+
 .minus-icon {
-    position: absolute;
     width: 12px;
     height: 3px;
-    top: 50%;
-    left: 14px;
+    fill: #A9A9A9;
 }
 
 .plus-icon {
-    position: absolute;
     width: 11px;
     height: 11px;
-    top: 50%;
-    right: 14px;
-}*/
+    fill: #A9A9A9;
+}
+
+.minus-icon:hover,
+.plus-icon:hover {
+    fill: #000000;
+}
 
 .search-form p:first-child {
     margin-top: 55px;
