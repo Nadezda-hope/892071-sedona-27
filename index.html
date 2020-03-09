@@ -10,14 +10,14 @@
     <body>
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo">
+                <a class="main-header-logo" href="index.html">
                     <img src="img/logo.png" width="140" height="71" alt="Логотипа Sedona">
                 </a>
                 <ul class="site-navigation">
-                    <li class="navigation-left"><a href="#">Информация</a></li>
-                    <li class="navigation-left"><a href="#">Фото и видео</a></li>
-                    <li class="navigation-right"><a href="#">Карта штата</a></li>
-                    <li class="navigation-right"><a href="sedona-hotels.html">Гостиницы</a></li>
+                    <li class="menu-item"><a href="#">Информация</a></li>
+                    <li class="menu-item"><a href="#">Фото и видео</a></li>
+                    <li class="menu-item"><a href="#">Карта штата</a></li>
+                    <li class="menu-item"><a href="sedona-hotels.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -25,7 +25,8 @@
             <h1 class="visually-hidden">Добро пожаловать в SEDONA</h1>
             <section class="content-logo">
                 <h2 class="visually-hidden">Приветствие</h2>
-                <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Sedona">
+                <img src="img/background-photo.jpg" alt="Панорама" class="first-screen-image">
+                <img src="img/welcome.png" alt="Добро пожаловать в Sedona" class="first-screen-welcome">
                 <div class="reasons">
                     <p>
                         Седона — небольшой городок в Аризоне<br>
@@ -132,6 +133,12 @@
                     Укажите предполагаемые даты поездки,<br> 
                     и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
+
+                <!-- <div размеры баттона, позишен релятив>
+                    <button></button>
+                    <form action=""  style="position: absolute; bottom: 0; left: 0;"></form>
+                </div> -->
+
                 <button class="form-button" type="button">Поиск гостиницы в Седоне</button>
                 </div>
                 <div class="form">
@@ -158,6 +165,27 @@
                         </p>
                         <p class="search-item people">
                             <span class="adults">
+
+                                <div class="d-flex fx-between">
+                                    <div width 226 class="d-flex fx-between">
+                                        <label for=""></label>
+                                        <div  class="d-flex">
+                                            <div width= 38px heigth = 38px></div>
+                                            <input width= 38px heigth = 38px type="text">
+                                            <div width= 38px heigth = 38px></div>
+                                        </div>
+                                    </div>
+                                    <div width 179 class="d-flex fx-between">
+                                        <label for=""></label>
+                                        <div  class="d-flex">
+                                            <div width= 38px heigth = 38px id=-></div>
+                                            <input width= 38px heigth = 38px type="text">
+                                            <div width= 38px heigth = 38px id=+></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                                 <label for="adults">Взрослые:</label>
                                 <input type="text" id="adults" name="adult" value="2">
                                 <span class="direction-minus">
