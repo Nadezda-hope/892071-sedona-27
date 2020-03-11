@@ -1,0 +1,1 @@
+var link=document.querySelector(".form-button"),popup=document.querySelector(".form");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show")}),window.addEventListener("keydown",function(e){27===e.keyCode&&(e.preventDefault(),popup.classList.contains("modal-show")&&popup.classList.remove("modal-show"))});
