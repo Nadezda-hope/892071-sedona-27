@@ -1143,13 +1143,16 @@ img {
 
 .main-footer {
     position: relative;
+    box-sizing: border-box;
     height: 593px;
 }
 
 .main-footer-inner {
     position: relative;
+    box-sizing: border-box;
     width: 1200px;
     height: 120px;
+    background-color: #ffffff;
 }
 
 .map {
@@ -1262,7 +1265,6 @@ img {
         -ms-flex-align: end;
             align-items: flex-end;
     min-height: 50px;
-    padding-top: 5px;
 }
 
 .footer-copyright span {
@@ -1271,7 +1273,6 @@ img {
         -ms-grid-row-align: center;
         align-self: center;
     padding-left: 4px;
-    padding-bottom: 10px;
 }
 
 .htmlacademy-logo {
