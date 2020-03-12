@@ -11,6 +11,6 @@
             evt.preventDefault();
             if (popup.classList.contains("modal-show")) {
                 popup.classList.remove("modal-show");
-                }
+            }
         }
     });

@@ -6,7 +6,7 @@ body {
     padding: 0;
     -webkit-box-shadow: 10px 0 12px #dcdcdc,-10px 0 12px #dcdcdc;
             box-shadow: 10px 0 12px #dcdcdc,-10px 0 12px #dcdcdc;
-    font-family: 'PT Sans',"Arial",sans-serif;
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
     line-height: 26px;
     letter-spacing: 0;
@@ -51,6 +51,7 @@ img {
     width: 1200px;
     margin: 0;
     padding: 0;
+    vertical-align: middle;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -177,7 +178,7 @@ img {
 }
 
 .reasons::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -56px;
     width: 100%;
@@ -188,7 +189,7 @@ img {
 
 .reasons p:first-child {
     margin: 0;
-    padding-top: 60px;
+    padding: 60px 355px 0 355px;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -196,7 +197,7 @@ img {
 
 .reasons p:last-child {
     margin: 0;
-    padding-top: 28px;
+    padding: 28px 355px 0 355px;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -207,17 +208,11 @@ img {
 }
 
 .reason-item h3 {
-    padding-top: 46px;
-    padding-bottom: 25px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
     font-size: 21px;
     font-weight: 700;
-}
-
-.reason-item p {
-    padding-top: 7px;
 }
 
 .content-feature {
@@ -242,13 +237,58 @@ img {
 }
 
 .real-city,.bridge,.square,.road,.tourists {
-    width: 400px;
+    max-width: 400px;
     min-height: 256px;
 }
 
 .square {
     width: 398px;
     border-right: 2px solid #efefef;
+}
+
+.real-city h3 {
+    padding: 46px 138px 25px 138px;
+}
+
+.real-city p {
+    margin: 0;
+    padding: 20px 60px 0 60px;
+}
+
+.bridge h3 {
+    padding: 46px 124px 25px 124px;
+}
+
+.bridge p{
+    margin: 0;
+    padding: 20px 49px 0 49px;
+}
+
+.square h3 {
+    padding: 46px 141px 25px 141px;
+}
+
+.square p {
+    margin: 0;
+    padding: 20px 94px 0 94px;
+}
+
+.road h3 {
+    padding: 46px 150px 25px 150px;
+}
+
+.road p {
+    margin: 0;
+    padding: 20px 65px 0 65px;
+}
+
+.tourists h3 {
+    padding: 46px 148px 25px 148px;
+}
+
+.tourists p {
+    margin: 0;
+    padding: 20px 74px 0 74px;
 }
 
 .tourists {
@@ -291,32 +331,33 @@ img {
     background-color: #eee;
 }
 
-.square h3,.road h3,.tourists h3 {
-    color: #000;
-}
-
 .housing svg,.food svg,.souvenir svg {
     margin: 0;
 }
 
 .housing h3,.food h3,.souvenir h3 {
     margin: 0;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
-.housing p,.food p {
-    margin-top: 22px;
-    margin-bottom: 22px;
+.housing p {
+    margin: 0;
+    padding: 22px 73px 22px 73px;
+}
+
+.food p {
+    margin: 0;
+    padding: 22px 57px 22px 57px;
 }
 
 .souvenir p {
-    margin-bottom: 29px;
-    margin-top: 22px;
+    margin: 0;
+    padding: 22px 65px 29px 65px;
 }
 
 .search {
     position: relative;
-    height: 291px;
+    min-height: 291px;
     text-align: center;
     line-height: 24px;
     letter-spacing: 0;
@@ -685,7 +726,7 @@ img {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 217px;
+    min-height: 217px;
     padding: 0 72px 0 70px;
     color: #fff;
     background-image: url(./../img/filter-background.jpg);
@@ -947,6 +988,7 @@ img {
     margin-right: 33px;
     color: #b2b2b2;
     font-size: 12px;
+    font-weight: 400;
     border-bottom: 1px dotted #b2b2b2;
 }
 
@@ -991,7 +1033,7 @@ img {
 }
 
 .search-inner-item {
-    height: 151px;
+    min-height: 151px;
     padding: 0 72px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1051,6 +1093,10 @@ img {
 
 .hotel-button {
     margin-bottom: 30px;
+}
+
+.hotel-title {
+    max-width: 260px;
 }
 
 .hotel-title a {
@@ -1143,6 +1189,7 @@ img {
 .search-inner-rating span {
     display: inline-block;
     text-align: center;
+    vertical-align: middle;
     width: 110px;
     height: 27px;
     font-size: 14px;
@@ -1172,11 +1219,6 @@ img {
     z-index: -1;
 }
 
-.map img {
-    width: 1200px;
-    height: 593px;
-}
-
 .footer-bottom {
     position: absolute;
     -webkit-box-sizing: border-box;
@@ -1196,7 +1238,7 @@ img {
     left: 0;
     width: 1200px;
     min-height: 120px;
-    padding: 35px 101px;
+    padding: 30px 101px;
     background-color: rgba(255,255,255,0.9);
 }
 
@@ -1226,6 +1268,7 @@ img {
     min-width: 150px;
     height: 48px;
     margin: 0;
+    margin-right: 59px;
     padding: 0;
 }
 

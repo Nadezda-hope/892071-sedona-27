@@ -5,7 +5,7 @@
         <title>СЕДОНА</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style-min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
     <header class="main-header">
@@ -87,8 +87,8 @@
                         <div class="scale">
                             <div class="bar"></div>
                         </div>
-                        <div class="range-toggle range-toggle-min"></div>
-                        <div class="range-toggle range-toggle-max"></div>
+                        <div class="range-toggle range-toggle-min" title="управление минимальной стоимостью"></div>
+                        <div class="range-toggle range-toggle-max" title="управление максимальной стоимостью"></div>
                     </div>
                     <button class="btn-transparent" type="submit">Показать</button>
                 </div>
@@ -103,16 +103,16 @@
                 <li><a href="#">по рейтингу</a></li>
             </ul>
             <div class="sorting-direct">
-                <span>
+                <a href="#" title="стрелка сортировки вверх">
                     <svg width="11" height="10" viewBox="0 0 11 10"  fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 0L0 10H11L5.5 0Z"/>
                     </svg>
-                </span>
-                <span class="active">
+                </a>
+                <a class="active" href="#" title="стрелка сортировки вниз">
                     <svg width="11" height="10" viewBox="0 0 11 10"  fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 10L0 0H11"/>
                     </svg>
-                </span>
+                </a>
             </div>
         </section>
         <section class="search-inner">
@@ -217,6 +217,7 @@
                 <div class="footer-contacts">
                     <h3 class="visually-hidden">Контакты</h3>
                     <p>#VISITSEDONA</p>
+                    <p>ТЕЛ: +7(495) 666-01-66</p>
                 </div>
                 <div>
                     <ul class="footer-social">
