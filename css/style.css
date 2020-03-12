@@ -629,18 +629,18 @@ img {
     font: inherit;
     text-transform: uppercase;
     position: relative;
-    border: 1px solid #f5f5f5;
+    border: 2px solid #f5f5f5;
     background-color: #f5f5f5;
 }
 
 .search-item input:hover {
-    border: 1px solid #e6e6e6;
+    border: 2px solid #e6e6e6;
     background-color: #e6e6e6;
     outline: 0;
 }
 
 .search-item input:focus {
-    border: 1px solid #dfdfdf;
+    border: 2px solid #dfdfdf;
     background-color: #fff;
     outline: 0;
 }
@@ -950,13 +950,18 @@ img {
     border-bottom: 1px dotted #b2b2b2;
 }
 
+.sorting-active a {
+    color: #81b3d2;
+    border: none;
+}
+
 .sorting-items a:hover,.sorting-items a:focus {
     color: #81b3d2;
 }
 
 .sorting-items a:active {
     color: #000;
-    border-bottom: none;
+    border: none;
 }
 
 .sorting-direct {
@@ -965,6 +970,10 @@ img {
 
 .sorting-direct span {
     padding-left: 8px;
+}
+
+.active svg {
+    fill: #81b3d2;
 }
 
 .sorting-direct svg:hover path,
