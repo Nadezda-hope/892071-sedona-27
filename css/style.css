@@ -300,9 +300,6 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -311,42 +308,50 @@ img {
 
 .pic {
     width: 800px;
-    height: 256px
+    height: 256px;
 }
 
 .real-city,.bridge {
     margin: 0;
     color: #fff;
-    background-color: #81b3d2
+    background-color: #81b3d2;
 }
 
 .square,.road,.tourists {
     color: #333;
-    background-color: #eee
+    background-color: #eee;
 }
 
-.housing svg,.food svg,.souvenir svg {
-    margin: 0
+.housing svg,.food svg {
+    margin: 0;
+    padding-top: 60px;
+}
+
+.souvenir svg {
+    padding-top: 55px;
 }
 
 .housing h3,.food h3,.souvenir h3 {
     margin: 0;
-    padding-top: 30px
+    padding-top: 30px;
 }
 
 .housing p {
     margin: 0;
-    padding: 22px 73px 22px 73px
+    padding: 2px 73px 22px 73px;
+    white-space: pre-line;
 }
 
 .food p {
     margin: 0;
-    padding: 22px 57px 22px 57px
+    padding: 2px 57px 22px 57px;
+    white-space: pre-line;
 }
 
 .souvenir p {
     margin: 0;
-    padding: 22px 65px 29px 65px
+    padding: 2px 65px 29px 65px;
+    white-space: pre-line;
 }
 
 .search {
@@ -355,7 +360,7 @@ img {
     text-align: center;
     line-height: 24px;
     letter-spacing: 0;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .form-header h2 {
@@ -363,7 +368,7 @@ img {
     padding-top: 56px;
     font-size: 30px;
     line-height: 24px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .form-header p:first-of-type {
