@@ -831,7 +831,7 @@ img {
     margin-bottom: 20px;
     font-size: 0;
     border: 2px solid #fff;
-    border-radius: 2px
+    border-radius: 2px;
 }
 
 .price-controls::after {
@@ -844,7 +844,7 @@ img {
     background: #fff;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
 }
 
 .price-controls label {
@@ -853,16 +853,16 @@ img {
     font-size: 14px;
     line-height: 30px;
     vertical-align: top;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .price-controls .min-price,.price-controls .max-price {
     width: 90px;
-    padding-left: 65px
+    padding-left: 65px;
 }
 
 .price-controls .min-price {
-    padding-left: 56px
+    padding-left: 56px;
 }
 
 .price-controls input {
@@ -872,24 +872,24 @@ img {
     color: inherit;
     font: inherit;
     background: 0 0;
-    border: 0
+    border: 0;
 }
 
 .range-controls {
     position: relative;
-    margin-bottom: 32px
+    margin-bottom: 32px;
 }
 
 .range-controls .scale {
     width: 315px;
     height: 2px;
-    background: rgba(255,255,255,.3)
+    background: rgba(255,255,255,.3);
 }
 
 .range-controls .bar {
     width: 85%;
     height: 2px;
-    background: #fff
+    background: #fff;
 }
 
 .range-toggle {
@@ -902,15 +902,15 @@ img {
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
     box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
-    cursor: pointer
+    cursor: pointer;
 }
 
 .range-toggle:hover {
-    background: #1c4f80
+    background: #1c4f80;
 }
 
 .range-toggle-min {
-    left: 0
+    left: 0;
 }
 
 .range-toggle-max {
