@@ -867,6 +867,7 @@ img {
 
 .price-controls input {
     width: 50px;
+    height: 25px;
     margin: 0;
     color: inherit;
     font: inherit;
@@ -1223,7 +1224,7 @@ img {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1241,9 +1242,13 @@ img {
     min-width: 200px
 }
 
+.footer-contacts {
+    margin-left: 31px;
+    margin-right: 169px;
+}
+
 .footer-contacts p {
     margin: 0;
-    margin-left: 33px;
     font-size: 21px;
     font-weight: 700
 }
@@ -1262,7 +1267,7 @@ img {
     min-width: 150px;
     height: 48px;
     margin: 0;
-    margin-right: 59px;
+    margin-right: 224px;
     padding: 0
 }
 
@@ -1321,6 +1326,7 @@ img {
 }
 
 .htmlacademy-logo {
+    padding-top: 5px;
     -webkit-transition-property: fill;
     -o-transition-property: fill;
     transition-property: fill;
